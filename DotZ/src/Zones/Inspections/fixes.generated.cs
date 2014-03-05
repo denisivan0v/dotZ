@@ -23,9 +23,9 @@ using JetBrains.ReSharper.Daemon.UsageChecking;
 namespace DotZ.Zones.Inspections
 {
   [JetBrains.Application.ShellComponent]
-  class SeverityRegistrar1058356543Component
+  class SeverityRegistrar1889579838Component
   {
-    public SeverityRegistrar1058356543Component(Lifetime lifetime, JetBrains.ReSharper.Daemon.IQuickFixes table)
+    public SeverityRegistrar1889579838Component(Lifetime lifetime, JetBrains.ReSharper.Daemon.IQuickFixes table)
     {
       table.RegisterQuickFix<IncorrectReferenceError>(lifetime, h => new AddDependencyNearby(h), typeof(AddDependencyNearby), null, BeforeOrAfter.Before);
     }
